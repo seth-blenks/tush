@@ -49,8 +49,15 @@
       console.log(response)
       localStorage.setItem('username', response.name)
       localStorage.setItem('image', response.picture)
+
       window.location = '/app.html'
     });
+  }
+
+  function FacebookLogin(){
+    FB.login(function(response){
+      statusChangeCallback(response)
+    },{'scope': 'public_profile'})
   }
 
 </script>
@@ -67,7 +74,7 @@
       <div class='mt-3'>
         <h2> Login To Use Application </h2>
         <p class='text-muted'> This application does not share you login credentials with any external app </p>
-        <div class="fb-login-button" scope="public_profile,email" onlogin="checkLoginState();" data-width="" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        <button class='form-control btn btn-primary' onclick = 'FacebookLogin();'>Login With Facebook</button>
       </div>
     </div>
   </div>
