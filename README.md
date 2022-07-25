@@ -12,7 +12,7 @@ The Following libraries were used to create this application:
 - Facebook SDK
 - Tinymce.js
 
-Site: The application is available on the site
+Site: The application is available on the site tush.seth-seth.xyz
 
 ## Login Page
 ![Login Page](/static/images/login.png)
