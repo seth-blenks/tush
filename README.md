@@ -1,5 +1,7 @@
 # Tush
 
+![Design](/static/images/banner.jpg)
+
 Tush is a react web application that implements Facebook OAuth2 Login and Tinymce Text Editing Softwares. The application allows logged in users to create Quotes, via the users dashboard, which are displayed on the applications News Feed.
 
 # Libraries Set
